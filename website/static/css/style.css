@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yomogi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap%27");
+body {
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+}
+canvas {
+  display: block;
+
+  /* vertical-align: bottom; */
+} /* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100vw;
+  height: 80vh;
+  background-color: #000000;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+/* .js-count-particles {
+  font-size: 1.1em;
+}
+#stats,
+.count-particles {
+  --webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+} */
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+.csi {
+  position: absolute;
+  color: #fff;
+  font-size: 5rem;
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 45vw;
+  margin-right: 45vw;
+  margin-top: 20vh;
+  left: 0;
+  right: 0;
+}
+.quote {
+  position: absolute;
+  color: #fff;
+  font-size: 3rem;
+  font-family: "DotGothic16", sans-serif;
+  margin-left: 34vw;
+  margin-right: 40vw;
+  margin-top: 35vh;
+  left: 0;
+  right: 0;
+}
+
+@media (max-width: 769px) and (min-width: 377px) {
+  .csi {
+    margin-left: 41vw;
+  }
+  .quote {
+    margin-left: 41vw;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 376px) {
+  .csi {
+    margin-left: 35vw;
+  }
+  .quote {
+    margin-left: 35vw;
+    font-size: 1rem;
+  }
+}
+/* h1 {
+  .typing-demo {
+    width: 22ch;
+    animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  text-align: center;
+  padding: 50px 0;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -1px;
+  color: inherit;
+  font-size: 40px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  font-weight: 300;
+  color: inherit;
+  padding: 50px;
+}
+
+.center {
+  text-align: center;
+}
+
+.contact {
+  position: fixed;
+  color: #fff;
+  font-size: 5rem;
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 33vw;
+  margin-right: 35vw;
+  margin-top: 15vh;
+  text-align: center;
+} */

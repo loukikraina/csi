@@ -1,0 +1,171 @@
+{% extends 'csi/base.html'%} {%load static%} {%block style%}
+<link rel="stylesheet" href="{% static 'css/events.css' %}" />
+<link rel="stylesheet" href="{% static 'css/card.scss' %}" />
+<style>
+ footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  height: auto;
+  /* width: 100vw; */
+  font-family: "Open Sans";
+
+  color: #fff;
+/*   width: 100%; */
+}
+
+footer p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  text-align: center;
+  padding-top: 10px;
+}
+</style>
+{%endblock style%} {%block content%}
+<div class="heading" data-aos="fade-up">
+  <h3 class="header-text text-center">UPCOMING EVENTS</h3>
+</div>
+<div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li
+      data-target="#carouselExampleIndicators"
+      data-slide-to="0"
+      class="active"
+    ></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner align-items-center">
+    {% for object in f_obj %}
+    <!--  {% comment %} {% if object.current %} {% endcomment %}
+    {% comment %} {% else %} {% endcomment %} -->
+    <div class="carousel-item {% if forloop.first %} active {% endif %} ">
+      <div class="d-flex justify-content-center">
+      <!-- <div class="card card-carousel" style="width: 35rem"> -->
+        <div class="content"> 
+          <div class="content-overlay"></div> <img class="content-image" src="{%static 'images/PR HEAD.png'%}">
+          <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">{{object.name}}</h3>
+              <p class="content-text"><i class="fas fa-calendar"></i> {{object.date}} </p>
+              <p>{{object.description}}</p>
+              <a href="{{object.link}}" target="_blank"> <button type="button" class="btn btn-light">Register</button></a>
+          </div>
+      </div>
+      </div>
+    
+    
+  </div>
+    {% endfor %}
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <div class="heading">
+        <div class="highlight" data-aos="fade-up">
+          <h3 class="header-text text-center">EVENTS CONDUCTED</h3>
+        </div>
+      </div>
+
+      <div class="container-fluid" style="justify-content: center;">
+        <div class="row mx-auto" >
+          {% for object in object_list %} {% if not object.current %}
+          <div class='col my-2 col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4'>
+<button button-id='{{object.pk}}' type="button" class="event-button" data-toggle="modal" data-target="#exampleModal">
+<div class="card bg-dark text-white">
+  <img class="card-img" src="{%static 'images/PR HEAD.png'%}" alt="Card image">
+  <div class="card-img-overlay" style='background-image: radial-gradient(
+            227.26% 174.61% at -136.98% 141.51%,
+            rgba(80, 230, 227, 0.5) 20%,  
+            rgba(43, 42, 43,0.6) 100%
+        );'>
+    <h5 class="card-title">{{object.name}}</h5>
+    <p class="card-text">{{object.date}}</p> 
+
+  </div>
+</div>
+</button>
+</div>
+
+
+
+
+  {% comment %} </div> {% endcomment %}
+
+  {% comment %} <div class="container">
+  <div class="card" style="background-image: url(http://my-wallpapers.com/wp-content/uploads/2013/12/218-400x250.jpg)"> 
+    <div class="text">
+      Life is Beautiful.
+    </div>
+  </div> {% endcomment %}
+
+          {% endif %} {% endfor %}
+  </div>
+
+</div>
+
+
+        
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id='event-body'>
+        ...
+      </div>
+      <div class="modal-footer">
+        {% comment %} <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> {% endcomment %}
+        <a class='register-url' target="_blank"><button type="button" class="btn btn-primary" >Register</button></a>
+      </div> 
+    </div>
+  </div>
+</div>
+        <footer>
+        
+       
+          <p>copyright &copy;2021 CSI FCRIT.</p>
+     
+  </footer>  <br />
+
+       
+        {%endblock%} {%block javascript%}
+        <script>
+           {% comment %} var myModal = document.getElementById("myModal");
+    var myInput = document.getElementById("myInput");
+
+    myModal.addEventListener("shown.bs.modal", function () {
+      myInput.modal({show : true});
+    });  {% endcomment %}
+          AOS.init();
+        </script>
+        <script src = '{% static 'js/events.js' %}'></script>  
+        <!-- <script src="{%static 'js/modal.js'%}"></script> -->
+        {%endblock javascript%}
+      </div>
+    </div>
+  </div>
+</div>

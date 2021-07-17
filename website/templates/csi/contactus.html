@@ -1,0 +1,88 @@
+{% extends 'csi/base.html'%} {%load static%} {%block style%}
+<link rel="stylesheet" href="{% static 'css/contactus.css' %}" />
+<style>
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    height: auto;
+    /* width: 100vw; */
+    font-family: "Open Sans";
+
+    color: #fff;
+    /*   width: 100%; */
+  }
+
+  footer p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 10px;
+  }
+</style>
+{%endblock style%} {%block content%}
+<div class="container">
+  <div class="row mt-5 mb-2">
+  <div class="heading d-flex justify-content-center" data-aos="fade-up">
+    <h3 class="header-text">CONTACT US</h3>
+  </div>
+</div>
+<div class="row my-2">
+  <div  class="d-flex justify-content-center" id="contact">
+   <div class="card">
+      <div class="social">
+        <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+
+      <div class="contact-box">
+        <div class="c-heading">
+          <h1>Get In Touch</h1>
+          <p>Call Or Email Us Regarding Question Or Issues</p>
+        </div>
+
+        <div class="c-inputs">
+          <form>
+            <input type="text" placeholder="Full Name" />
+            <input type="email" placeholder="Example@gmail.com" />
+            <textarea name="message" placeholder="Write Message"></textarea>
+
+            <button>SEND</button>
+          </form>
+        </div>
+      </div>
+
+      <div class=" px-0 map">
+       <div class="card px-0 mx-0" style="height:100%; width:100%;">
+     
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.732104373433!2d72.98951561472961!3d19.075512687088263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6cae0d8c5ab%3A0xbbf4481d662ca2d8!2sFr.%20Conceicao%20Rodrigues%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1625758586749!5m2!1sen!2sin"
+width="100%"
+height="100%"
+        frameborder="0"
+        style="border: 0"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+      
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<footer>
+  <p>copyright &copy;2021 CSI FCRIT.</p>
+</footer>
+<br />
+{%endblock%} {%block javascript%}
+<script>
+  AOS.init();
+</script>
+{%endblock javascript%}

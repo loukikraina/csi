@@ -1,0 +1,442 @@
+{% extends 'csi/base.html' %} {% load static %} {% block style %}
+<link rel="stylesheet" href="{% static 'css/aboutus.css' %}" />
+<style>
+    footer {
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background: #000;
+     height: 2rem;
+     /* width: 100vw; */
+     font-family: "Open Sans";
+   
+     color: #fff;
+   /*   width: 100%; */
+   }
+   
+   footer p {
+     font-size: 14px;
+     word-spacing: 2px;
+     text-transform: capitalize;
+     text-align: center;
+     padding-top: 10px;
+   }
+   </style>
+{% endblock style %}
+{% block content %}
+
+<div class="heading" data-aos="fade-up"><h3 class="header-text">ABOUT US</h3></div>
+{% comment %} <div class="about-us">
+<div class="glass-panel">
+  <p>The seed for the Computer Society of India (CSI) was first shown in the year 1965 with a handful of IT enthusiasts who were a computer user group and felt the need to organize tteir activities. They also wanted to share their knowledge and exchange ideas on what they felt was a fast emerging sector. Today the CSI takes pride in being the largest and most professionally managed association of and for IT professionals in India. The purposes of the Society are scientific and educational directed towards the advancement of the theory and practice of computer science and IT.</p>
+  </div>
+</div> {% endcomment %}
+
+<div class="card mx-auto w-75 custom-glass" style="width: 18rem; margin-top: 5%;">
+  {% comment %} <img class="card-img-top" src="..." alt="Card image cap"> {% endcomment %}
+  <div class="card-body">
+    {% comment %} <h5 class="card-title">Card title</h5> {% endcomment %}
+    <p class="card-text">The seed for the Computer Society of India (CSI) was first shown in the year 1965 with a handful of IT enthusiasts who were a computer user group and felt the need to organize tteir activities. They also wanted to share their knowledge and exchange ideas on what they felt was a fast emerging sector. Today the CSI takes pride in being the largest and most professionally managed association of and for IT professionals in India. The purposes of the Society are scientific and educational directed towards the advancement of the theory and practice of computer science and IT.</p>
+  </div>
+</div>
+
+
+<div class="heading" data-aos="fade-up"><h3 class="header-text">WHAT WE DO</h3></div>
+<div class="card mx-auto w-75 custom-glass" style="width: 18rem; margin-top: 5%;">
+  {% comment %} <img class="card-img-top" src="..." alt="Card image cap"> {% endcomment %}
+  <div class="card-body">
+    {% comment %} <h5 class="card-title">Card title</h5> {% endcomment %}
+    <p class="card-text">The CSI FCRIT chapter pursues to build a holistic foundation for computer engineering students. The council aims to conduct workshops, seminars, competitions and bootcamps to elevate the level of  technical knowledge and promote coding culture in the campus with collaboration of faculty-in-charge and volunteers.
+    
+    </p>
+  </div>
+</div>
+{% comment %} <div class="what-us">
+<div class="glassy">
+  
+  <p class="para">We here at CSI FCRIT, aim to promote and expand the knowledge of Computer Science amongst the students of our college, thus, boosting the objectives of this nationwide organization.
+This has been achieved with the combined efforts of the team of students and the faculty in charge by conducting workshops, seminars, webinars, and organizing events. We further aim to engage the developers and ensure active participation in these activities concerning one of the most emerging sciences of today’s world - Computer Science.</p>
+  </div>
+</div> {% endcomment %}
+
+<div class="heading">
+    <div class="highlight neons" data-aos="fade-up">
+        
+        <h3 class="header-text " id='council-header' >COUNCIL <span class="break-text text-center">2021-22</span></h3>
+    </div>
+</div>
+
+<!------ Include the above in your HEAD tag ---------->
+
+<!-- Team -->
+<section id="team" class="pb-5">
+    <div class="container">
+       
+        <div class="row justify-content-center">
+             <!-- Team member -->
+             <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="{% static 'images/AADITEE.png' %}" alt="card image"></p>
+                                    <h4 class="card-title">President</h4>
+                                    <p class="card-text">Aaditee Pate</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Aaditee Pate</h4>
+                                    <p class="card-text">And I’m optimistic because every day I get a little more desperate.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-github"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+             <!-- Team member -->
+             <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="{% static 'images/TREVOR.png' %}" alt="card image"></p>
+                                    <h4 class="card-title">Vice President</h4>
+                                    <p class="card-text">Trevor D'costa</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Trevor D'costa</h4>
+                                    <p class="card-text">I hope you'll excuse my cheap wit but the hour is late and it's all I have left.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-github"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="row">
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="{% static 'images/RISHIKA.png' %}" alt="card image"></p>
+                                    <h4 class="card-title">Secretary</h4>
+                                    <p class="card-text">Rishika Agarwal</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Rishika Agarwal</h4>
+                                    <p class="card-text">Dealing with me is like herding cats. &nbsp; &nbsp; &nbsp; &nbsp;</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-github"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="{% static 'images/SNEHAL.png' %}" alt="card image"></p>
+                                    <h4 class="card-title">Treasurer</h4>
+                                    <p class="card-text">Snehal Tagalpallewar</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Snehal Tagalpallewar</h4>
+                                    <p class="card-text">I have a natural talent for being irrational.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-github"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="{% static 'images/LOUKIK.png' %}" alt="card image"></p>
+                                    <h4 class="card-title">Technical and Venue Head</h4>
+                                    <p class="card-text">Loukik Raina</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Loukik Raina</h4>
+                                    <p class="card-text">I have lot of hidden talents. The problem is even I can't find them!</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-github"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="{% static 'images/ANUSHKA.png' %}" alt="card image"></p>
+                                    <h4 class="card-title">Documentation Head</h4>
+                                    <p class="card-text">Anushka Amte</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Anushka Amte</h4>
+                                    <p class="card-text">"The risk I took was calculated, but man, am I bad at math."</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-github"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="{% static 'images/ELISHA.png' %}" alt="card image"></p>
+                                    <h4 class="card-title">PR Head</h4>
+                                    <p class="card-text">Elisha Gras</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Elisha Gras</h4>
+                                    <p class="card-text">"Looking for trouble and if I cannot find it, I will create it."</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-github"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="{% static 'images/BRYAN.png' %}" alt="card image"></p>
+                                    <h4 class="card-title">Sponsorship Head</h4>
+                                    <p class="card-text">Bryan Francis</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Bryan Francis</h4>
+                                    <p class="card-text">"You need a little bit of insanity to deal with me."</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-github"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            
+
+        </div>
+    </div>
+</section>
+<!-- Team -->
+<footer>
+        
+       
+    <p>copyright &copy;2021 CSI FCRIT.</p>
+
+</footer>  <br />
+{% endblock %}
+{% block javascript %}
+
+<!-- <script type="text/javascript" src="{% static '/js/svg1.js' %}"></script> -->
+<script>  AOS.init();</script>
+{% endblock javascript %}
+</csi>

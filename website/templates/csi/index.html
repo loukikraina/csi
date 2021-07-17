@@ -1,0 +1,32 @@
+{% extends 'csi/base.html' %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+{% endblock style %}
+{% block content %}
+
+
+
+<div id="particles-js">
+    <div class="typing-demo">
+        <h3 class="csi text-center">CSI</h3>
+        <h5 class="quote text-center">Think.Observe.Code</h5>
+    </div>
+</div>
+<div class="count-particles">
+    
+</div>
+{% block footer %} {% include 'csi/footer.html' %} {% endblock footer %}
+     
+<br />
+{% endblock %}
+
+
+
+{% block javascript %}
+<script type="text/javascript" src="{% static '/js/app.js' %}"></script>
+{% endblock javascript %}
+
+
+
+</csi>
